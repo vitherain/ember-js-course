@@ -13,9 +13,9 @@ Router.map(function() {
 
   this.route('posts', { resetNamespace: true }, function () {
     this.route('new');
-    this.route('post', {path: ':post_id'});
   });
   this.route('events');
+  this.route('post');
 });
 
 export default Router;
