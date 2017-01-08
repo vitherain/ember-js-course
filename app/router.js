@@ -7,6 +7,15 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('about');
+  this.route('services');
+  this.route('contact');
+
+  this.route('posts', { resetNamespace: true }, function () {
+    this.route('new');
+    this.route('post', {path: ':post_id'});
+  });
+  this.route('events');
 });
 
 export default Router;
