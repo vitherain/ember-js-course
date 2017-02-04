@@ -7,6 +7,7 @@ export default Ember.Controller.extend({
 
       this.store.findRecord('car', id).then(function(car) {
         car.destroyRecord();
+        car.save();
         self.transitionToRoute('cars');
       });
     }

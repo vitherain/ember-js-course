@@ -12,8 +12,8 @@ export default Ember.Controller.extend({
         car.set('make', make);
         car.set('model', model);
         car.set('year', year);
-        //car.save();
-        self.transitionTo('cars');
+        car.save();
+        self.transitionToRoute('cars');
       });
     }
   }

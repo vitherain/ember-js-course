@@ -13,7 +13,7 @@ export default Ember.Controller.extend({
       });
 
       newCar.save();
-      self.transitionTo('cars');
+      self.transitionToRoute('cars');
     }
   }
 });
