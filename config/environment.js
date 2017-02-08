@@ -4,7 +4,9 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'myapp',
     environment: environment,
-    contentSecurityPolicy: {'connect-src': "'self' wss://*.firebaseio.com"},
+    contentSecurityPolicy: {
+      'connect-src': "'self' https://api.github.com"
+    },
     firebase: {
       apiKey: "AIzaSyCs5EEgCl2Lr4adflpeVEXve78DK0qv_OI",
       authDomain: "mycars-52d50.firebaseapp.com",

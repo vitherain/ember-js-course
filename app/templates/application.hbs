@@ -24,5 +24,12 @@
 <div class="container">
   <h2 id="title">Welcome to Our App</h2>
 
-  {{outlet}}
+  <div class="row">
+    <div class="col-md-4">
+      {{my-github-repos model=model}}
+    </div>
+    <div class="col-md-8">
+      {{outlet}}
+    </div>
+  </div>
 </div>
